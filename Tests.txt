@@ -1,0 +1,207 @@
+abalone> n 7
+New game started. You are X.
+abalone> m 1 1 2 2
+abalone> m 2 1 1 1
+abalone> m 1 1 2 2
+abalone> m 2 2 3 3
+abalone> p foo bar
+   O O . O
+  O . O X O
+ . O O X O O
+. . O X . . .
+ . . X X . .
+  . . X X X
+   . X X X
+abalone> b
+X: 11
+O: 11
+abalone> m 1 4 2 4
+abalone> m 2 4 3 4
+abalone> m 3 4 4 4
+abalone> m 5 5 6 6
+abalone> p
+   X . . X
+  O X O X .
+ . O X O . .
+. . O X O O .
+ . . X O . .
+  . . X . X
+   . X X .
+abalone> b
+X: 11
+O: 8
+abalone> m 7 4 6 4
+abalone> m 6 4 5 4
+abalone> m 5 4 4 4
+abalone> m 1 2 2 3
+abalone> m 4 5 4 4
+abalone> m 1 3 2 3
+abalone> m 7 7 6 7
+abalone> m 4 4 4 3
+abalone> p
+   . . O .
+  . O . O X
+ O X . O . .
+. X X . O . .
+ . . X X . .
+  . . X X .
+   . . . X
+abalone> b
+X: 9
+O: 6
+abalone> m 1 4 2 4
+abalone> m 2 4 3 4
+abalone> p
+   . . . .
+  . O . O O
+ O X X O . .
+. X X X O . .
+ . . X X . .
+  . . X . .
+   . . . .
+abalone> m 5 4 5 3
+Congratulations! You won.
+abalone> b
+X: 8
+O: 5
+abalone> m 4 4 5 4
+Error! Game is already over!
+abalone> s
+New game started. You are O.
+abalone> p
+   X X X .
+  X X X X X
+ . . X X . .
+. . . X . . .
+ . . O O . .
+  O O O O O
+   O O O O
+abalone> m 1 1 2 2
+Error! Move could not be executed!
+abalone> m 7 4 6 4
+Error! Move could not be executed!
+abalone> m 1 1 0 1
+abalone> p
+   . X X .
+  X X X X X
+ . . X X . .
+. . . X . . .
+ . . O X . .
+  O O O O O
+   . O O O
+abalone> b
+X: 11
+O: 9
+abalone> m 3 1 3 2
+Error! Move could not be executed!
+abalone> m 0 1 1 1
+Error! Invalid position!
+abalone> m 1 2 3 2
+Error! Move could not be executed!
+abalone> s
+New game started. You are X.
+abalone> m 1 1 2 2
+abalone> p
+   O O O O
+  O . O O O
+ . O O O . .
+. . . X . . .
+ . . X X . .
+  X X X X X
+   . X X X
+abalone> help
+A abalone game where a human player plays against the machine.
+Supported commands:
+	new s				Create a new board with size s.
+	switch				Switch opening player.
+	move r1 d1 r2 d2	Move the ball at row r1 and diagonal d1 to row r2 and
+diagonal d2.
+	level l				Set the difficulty level of the machine.
+	balls				Show the number of balls of each player.
+	print				Show the abalone board.
+	help				Show this message.
+	quit				Quit the program.
+abalone> m 2 2 3
+Error! Missing arguments. Expected: 5
+abalone> n
+Error! Missing arguments. Expected: 2
+abalone>     v  3  3    4
+Error! Unknown command!
+abalone> n 15
+New game started. You are X.
+abalone> m 1 1 2 2
+abalone> p
+       O O O O O O O .
+      O O O O O O O O O
+     . . O O O O O O . .
+    . . . . . . . O . . .
+   . . . . . . . . . . . .
+  . . . . . . . . . . . . .
+ . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . .
+ . . . . . . . . . . . . . .
+  . . . . . . . . . . . . .
+   . . . . . . . . . . . .
+    . . . X . . . . . . .
+     . . X X X X X X . .
+      X X X X X X X X X
+       . X X X X X X X
+abalone> s
+New game started. You are O.
+abalone> n 11
+New game started. You are O.
+abalone> p
+     X X X X X .
+    X X X X X X X
+   . . X X X X . .
+  . . . . . X . . .
+ . . . . . . . . . .
+. . . . . . . . . . .
+ . . . . . . . . . .
+  . . . . . . . . .
+   . . O O O O . .
+    O O O O O O O
+     O O O O O O
+abalone> n 10
+Error! Board size must be odd and bigger than 6.
+abalone> n 7
+New game started. You are O.
+abalone> l 3
+abalone> m 1 2 2 2
+abalone> p
+   . X X .
+  X X X X X
+ . . X X . .
+. . . X . . .
+ . O O X . .
+  O O O O O
+   O . O O
+abalone> b
+X: 11
+O: 10
+abalone> l 0
+Error! Level must be bigger than 1!
+abalone> l 1
+abalone> p
+   . X X .
+  X X X X X
+ . . X X . .
+. . . X . . .
+ . O O X . .
+  O O O O O
+   O . O O
+abalone> m 3 2 3 3
+abalone> p
+   . X . .
+  X X X X X
+ . . X X . .
+. . X X . . .
+ . . O O X .
+  O O O O O
+   O . O O
+abalone> m foo bar buzz feed
+Error! Invalid number: foo
+Error! Invalid number: bar
+Error! Invalid number: buzz
+Error! Invalid number: feed
+abalone> q
